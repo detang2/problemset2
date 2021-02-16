@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-body{
+#darkmode {
+    margin: 5%;
+    font-family:'Quicksand', sans-serif; 
+    font-size: 1em;
+    color: #F3EFE5;
+    background: #292929;
+}
+
+#darkmode .commentsection {
+    background: #3b3b3b;
+}
+
+#darkmode .clickps2, #darkmode #submitcomment, #darkmode .comments button {
+    background: #c2b7a4;
+    color: black;
+}
+
+#darkmode .clickps2:hover, #darkmode #submitcomment:hover, #darkmode .comments button:hover {
+    transition: ease .3s;
+    background: #928A7E;
+}
+
+#lightmode{
     margin: 5%;
     font-family:'Quicksand', sans-serif; 
     font-size: 1em;
@@ -8,13 +30,27 @@ body{
     background: #F3EFE5;
 }
 
+.comments button {
+    margin: 0 0 0 5px;
+    padding: 5px 8px;
+    background: #595247;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: ease .3s;
+}
+
+button:hover {
+    background: #928A7E;
+}
+
 header {
     padding-bottom: 20px;
 }
 
 img {
-    margin: 10px 0 10px;
-    width: 300px;
+    /* margin: 10px 0 10px; */
+    width: 200px;
 }
 
 h1 {
@@ -23,6 +59,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    padding: 10px 0;
 }
 
 p {
@@ -44,10 +81,6 @@ ul {
     padding-bottom: 20px;
 }
 
-.ps2 h2 {
-    padding-bottom: 12px;
-}
-
 .clickps2 {
     padding: 5px 8px;
     background: #595247;
@@ -61,10 +94,79 @@ ul {
 }
 
 footer {
-    padding-top: 50px;
+    padding-top: 30px;
     color: #C4BBAD;
 }
 
 li {
     padding: 1px;
+}
+
+.catcontent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lightmodebtn {
+    border: none;
+    border-radius: 5px;
+    transition: ease .3s;
+    background-color: #dbd0bd;
+    padding: 5px 10px;
+}
+
+#lightmodebtn:hover{
+    text-decoration: underline;
+}
+
+#darkmodebtn {
+    border: none;
+    border-radius: 5px;
+    transition: ease .3s;
+    background-color: #c2b7a4;
+    padding: 5px 10px;
+
+}
+#darkmodebtn:hover{
+    text-decoration: underline;
+}
+
+.comments {
+    margin: 20px 0;
+}
+
+#submitcomment {
+    width: 350px;
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: #595247;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: ease .3s;
+}
+
+#submitcomment:hover {
+    background: #928A7E;
+}
+
+textarea {
+    text-align: left;
+    width: 350px;
+    height: 100px;
+    border: none;
+    resize: none;
+}
+
+.commentsection {
+    margin: 10px 0;
+    padding: 15px 10px;
+    background: #dbd0bd;
+    width: 330px;
+    overflow-wrap: break-word;
+}
+
+#usercomments li {
+    margin: 2px;
+    list-style-type: none;
 }

@@ -6,8 +6,9 @@
     <title>Nori & Chako</title>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/js.js" defer></script>
 </head>
-<body>
+<body id="lightmode">
 <main>
     <header>
         <h1>Nori & Chako</h1>
@@ -15,11 +16,19 @@
     <article>
         <section class="ps2">
             <h2>Problem Set 2</h2>
-            <a class="clickps2" href="ps2-tests.html">Part 2 Tests</a>
+            <a class="clickps2" href="ps2-tests.html" target="blank">Part 2 Tests</a>
         </section>
         <section>
-            <h2>Cattos</h2>
-            <img src="image/norichako.jpeg" alt="nori and chako sleeping">
+            <section class="catcontent">
+                <div>
+                    <h2>Nori</h2>
+                    <img src="image/nori.jpeg" alt="nori looking at camera">
+                </div>
+                <div>
+                    <h2>Chako</h2>
+                    <img src="image/chako.jpeg" alt="chako in bed looking at camera">
+                </div>
+            </section>
             <p>fun facts:</p>
             <ul>
                 <li>they live in chicago</li>
@@ -31,8 +40,20 @@
                 <li>chako's a better jumper than nori despite the age difference</li>
             </ul>
         </section>
+        <section class="comments">
+            <h2>Comments</h2>
+            <textarea id="typespace" placeholder="Type here"></textarea><br>
+            <input type="submit" id="submitcomment" value="Submit">
+            <section class="commentsection">
+                <ul id="usercomments">Anonymous Voices<span id = "com-output"></span></ul>
+            </section>
+        </section>
     </article>
     <footer>
+        <section>
+            <button id="lightmodebtn">Light Mode</button>
+            <button id="darkmodebtn">Dark Mode</button>
+        </section>
         <p>maow</p>
     </footer>
 </main>
