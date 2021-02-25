@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/js.js" defer></script>
+    <script src="js/dist/snap.svg-min.js"></script>
+    <script src="https://kit.fontawesome.com/baddf46a31.js" crossorigin="anonymous"></script>
 </head>
 <body id="lightmode">
+    <svg id="catsvg"></svg>
 <main>
     <header>
-        <h1>Nori & Chako</h1>
+        <h1>Nori & Chako <i class="fas fa-paw"></i></h1>
     </header>
     <article>
         <section class="ps2">
@@ -21,6 +24,11 @@
         <section>
             <h2>Problem Set 4</h2>
             <p>Comment section below + delete comment function + light and dark mode</p>
+        </section>
+        <section>
+            <h2>Problem Set 5</h2>
+            <p>1. Snap.svg vector on top. Made line art with .polyline and used mask for the cirlce container</p>
+            <p>2. FontAwesome icons</p>
         </section>
         <section>
             <section class="catcontent">
@@ -49,7 +57,7 @@
             <textarea id="typespace" placeholder="Type here"></textarea><br>
             <input type="submit" id="submitcomment" value="Submit">
             <section class="commentsection">
-                <ul id="usercomments">Anonymous Voices<span id = "com-output"></span></ul>
+                <ul id="usercomments">Anonymous Voices <i class="fas fa-comments"></i><span id = "com-output"></span></ul>
             </section>
         </section>
     </article>
@@ -58,7 +66,7 @@
             <button id="lightmodebtn">Light Mode</button>
             <button id="darkmodebtn">Dark Mode</button>
         </section>
-        <p>maow</p>
+        <p>maow <i class="fas fa-cat"></i></p>
     </footer>
 </main>
 </body>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+#catsvg{
+    width: 100%;
+    height: auto;
+}
+
 #darkmode {
     margin: 5%;
     font-family:'Quicksand', sans-serif; 
@@ -96,6 +101,10 @@ ul {
 footer {
     padding-top: 30px;
     color: #C4BBAD;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 li {
