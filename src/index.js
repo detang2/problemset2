@@ -1,6 +1,19 @@
 /*
+fontawesome
+ */
+import { icon, library } from '@fortawesome/fontawesome-svg-core'
+
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas)
+
+const comment = icon({ prefix: 'fas', iconName: 'comment' })
+document.body.appendChild(comment.node[0])
+
+/*
 Snap.svg
  */
+import Snap from 'snapsvg-cjs'
 const s = Snap("#catsvg");
 
 const circle = s.circle(64, 70, 60);
@@ -47,7 +60,6 @@ circle.attr({
 
 maskcircle.attr({
     fill: 'white',
-    // opacity: .8
 })
 
 lineart.attr({
@@ -58,7 +70,6 @@ lineart.attr({
 lineartears.attr({
     fill: '#595247'
 })
-
 
 /* 
 Color modes
@@ -100,7 +111,5 @@ submit.addEventListener("click", () => {
     entry.append(removeButton);
     removeButton.addEventListener("click", () => {
         entry.remove();
-
-        // response.value = "";
     })
 })
